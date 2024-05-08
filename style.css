@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+#main {
+    height: 10000px;
+}
+
+/* Keyframe */
+
+@keyframes rotate-arrow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes appear {
+    from{
+        z-index: 0;
+        opacity: 0.1;
+    }
+    to{
+        z-index: 1;
+        opacity: 1;
+    }
+}
+
+
+
+/* Command css */
+.icon {
+    line-height: 48px;
+    padding: 15px 4px;
+    font-size: 18px;
+}
+
+
+
+
+#header a {
+    text-transform: uppercase;
+}
+
+#info-nav {
+    height: 48px;
+    width: 100%;
+    background-color: rgb(255, 230, 0);
+}
+
+
+
+
+#info-nav div {
+    line-height: 48px;
+    display: inline-block;
+}
+
+#info-nav div a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #000;
+    opacity: 0.7;
+}
+
+#searchBar {    
+    box-sizing: border-box;
+    width: 282px;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px 8px;
+    height: 35px;
+    box-shadow: none;
+}
+
+.searchTab {
+    position: relative;
+    float: right;
+    padding: 6px 40px;
+}
+
+.search-icon {
+    padding: 16px 16px;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+#header-2 {
+    height: 64px;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+#header-2 #navigation {
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    position: relative;
+}
+
+
+
+#navigation  li:hover #Event-navigation {
+    display: block;
+    animation: appear ease .5s;
+}
+
+#header-2 #navigation > li {
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 64px;
+    position: relative;
+}
+
+#navigation li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#header-2 .nav-logo {
+    box-sizing: border-box;
+}
+
+#header-2 .img-logo {
+    margin-left: 44px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+}
+
+#header-2 #Event-navigation {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100px;
+    right: 0;
+    border-top: rgb(255, 230, 0) solid 2px;
+}
+
+#Event-navigation li a {
+    padding: 0 20px  ;
+}
+
+#header-2 .ShopingExtention {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 64px;
+}
+
+#header-2 .ShopingExtention a{
+    text-decoration: none;
+    color: #000;
+    padding: 24px 20px;
+}
+
+.icon-cart {
+    font-size: 20px;
+}
+
+
+#slider {
+    padding-top: 50%;
+    background: url("./img/267468610_440935940941391_1309230057504110556_n.jpg") bottom center / cover no-repeat;
+    position: relative;
+}
+
+
+
+.menu {
+
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 16px;
+    min-width: 800px;
+    color: #000;
+}
+
+#menu h1 {
+    font-size: 40px;
+    text-align: center; 
+    margin-top: 10px;
+}
+
+#drink {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 15%;
+    height: 300px;
+    box-shadow: 10px 10px 10px rgba(255, 230, 0, 0.4);
+    margin: 20px 20px 0 20px;
+}
+
+.product .img-product1 {
+    width: 100%;
+    height: 50%;
+    background-image: url(/2021_html_jv_css/ChillWithBee/img/290738208_566728108362173_2694011978531622960_n.jpg);
+}
